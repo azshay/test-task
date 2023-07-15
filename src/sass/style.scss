@@ -1,0 +1,11 @@
+@import "./base/normalize.scss";
+
+@import "./blocks/header/header.scss";
+@import "./blocks/menu/menu.scss";
+@import "./blocks/editor/editor.scss";
+@import "./blocks/modal/modal.scss";
+
+main {
+    display: grid;
+    grid-template-columns: 250px auto;
+}

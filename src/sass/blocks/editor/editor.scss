@@ -1,0 +1,29 @@
+.editor {
+    overflow: auto;
+    margin-top: 5px;
+    padding-left: 3px;
+	border-left: 1px solid rgb(247, 247, 247);
+    &__files {
+        display: flex;
+    }
+
+    &__file {
+        padding: 10px;
+        border: 1px solid rgb(92, 114, 159);
+        border-bottom: none;
+        &:not(:first-child) {
+            margin-left: 2px;
+        }
+        cursor: pointer;
+        opacity: 0.4;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+
+    &__text {
+        border-top: 2px solid rgb(8, 72, 142);
+        padding: 30px;
+    }
+}

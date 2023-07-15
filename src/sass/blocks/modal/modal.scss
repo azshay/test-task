@@ -1,0 +1,34 @@
+.modal {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.4);
+	width: 100%;
+	height: 100%;
+    left: 0;
+    top: 0;
+    display: none;
+
+	&__wrapper {
+		padding-bottom: 100px;
+		border: 1px solid #000;
+		border-radius: 20px;
+        width: 50%;
+        background: #fff;
+        margin: 100px auto;
+
+        h2 {
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        input {
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+	}
+}
+
+.btn__modal {
+    margin: 20px auto;
+    display: block;
+}
