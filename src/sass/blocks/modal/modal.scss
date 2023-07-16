@@ -26,6 +26,17 @@
             margin-top: 20px;
         }
 	}
+
+    &__description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+
+        input {
+            margin: 0;
+        }
+    }
 }
 
 .btn__modal {

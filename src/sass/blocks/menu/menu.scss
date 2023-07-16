@@ -3,7 +3,7 @@
 	overflow: auto;
 
 	.currentElement {
-		background-color: rgb(84, 115, 250);
+		background-color: rgba(84, 115, 250, 0.6);
 		border-radius: 20px;
 	}
 
@@ -17,7 +17,7 @@
 		list-style-type: none;
 
 		span {
-			padding-left: 20px;
+			padding: 5px 5px 5px 20px;
 			position: relative;
 
 			&::after {
@@ -29,8 +29,8 @@
 				// background-image: url("https://cdn.icon-icons.com/icons2/1744/PNG/512/3643772-archive-archives-document-folder-open_113445.png");
 				background-image: url("https://cdn.icon-icons.com/icons2/548/PNG/512/1455554839_line-60_icon-icons.com_53339.png");
 				background-size: 15px 15px;
-				top: 0;
-				left: 0;
+				top: 5px;
+				left: 3px;
 			}
 		}
 	}
@@ -49,5 +49,14 @@
 
 	.list {
 		cursor: pointer;
+	}
+
+	&__description {
+		position: absolute;
+		z-index: 1;
+		left: 40px;
+		border: 1px solid #000;
+		padding: 20px 50px;
+		background: #fff;
 	}
 }

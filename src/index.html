@@ -5,6 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./css/style.min.css" />
+		<link
+			rel="stylesheet"
+			href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css"
+		/>
 		<title>Test task</title>
 	</head>
 
@@ -21,11 +25,10 @@
 		<main>
 			<div class="menu"></div>
 
-			
-            <div class="editor">
+			<div class="editor">
 				<div class="editor__files"></div>
 				<p class="editor__text">Выберите файл для просмотра</p>
-            </div>
+			</div>
 
 			<!-- <div class="editor">
 				<div class="editor__files">
@@ -42,16 +45,22 @@
 			</div> -->
 		</main>
 
-        <div class="modal">
-            <div class="modal__wrapper">
-                <h2>Загрузка файла</h2>
+		<div class="modal">
+			<div class="modal__wrapper">
+				<h2>Загрузка файла</h2>
 
-                <input type="file" id="file">
+				<input type="file" id="file" />
 
-                <button class="btn btn__modal">Загрузить</button>
-            </div>
-        </div>
+				<div class="modal__description">
+					<label for="description">Описание для файла: </label>
+					<input type="text" id="description" />
+				</div>
+
+				<button class="btn btn__modal">Загрузить</button>
+			</div>
+		</div>
 
 		<script src="./js/script.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
 	</body>
 </html>
